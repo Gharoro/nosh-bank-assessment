@@ -29,6 +29,12 @@ class AuthController {
                 accountNumber,
                 role
             }
+            // check if user exists
+            const user = await UserService.getUserByEmail(email.toLowerCase())
+            if (user) {
+                return errorResponse(res, 400, "Account with email already exist");
+            }
+            // create user if user does not exist
             await UserService.createUser(newUser);
             return successResponse(res, 201, "Signup Success");
         } catch (error) {
