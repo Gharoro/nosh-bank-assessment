@@ -2,9 +2,10 @@
 
 A Node.Js/Express bank API with versioning.
 
-## API Documentation
+## API Documentation and Live URL
 
 - [https://documenter.getpostman.com/view/6511530/2s93z3f5Zu](https://documenter.getpostman.com/view/6511530/2s93z3f5Zu)
+- [https://nosh-bank-assessment-production.up.railway.app/](https://nosh-bank-assessment-production.up.railway.app/)
 
 ## Features
 
